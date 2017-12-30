@@ -5,6 +5,7 @@ using Discord.Commands;
 using NadekoBot.Core.Services;
 using NadekoBot.Core.Common.TypeReaders;
 using Discord.WebSocket;
+using NadekoBot.Modules.CustomReactions.Services;
 
 namespace NadekoBot.Common.TypeReaders
 {
@@ -48,23 +49,23 @@ namespace NadekoBot.Common.TypeReaders
         {
             input = input.ToUpperInvariant();
 
-            //var _crs = ((INServiceProvider)services).GetService<CustomReactionsService>();
+            var _crs = ((INServiceProvider)services).GetService<CustomReactionsService>();
 
-            //if (_crs.GlobalReactions.Any(x => x.Trigger.ToUpperInvariant() == input))
-            //{
-            //    return TypeReaderResult.FromSuccess(new CommandOrCrInfo(input));
-            //}
-            //var guild = context.Guild;
-            //if (guild != null)
-            //{
-            //    if (_crs.GuildReactions.TryGetValue(guild.Id, out var crs))
-            //    {
-            //        if (crs.Concat(_crs.GlobalReactions).Any(x => x.Trigger.ToUpperInvariant() == input))
-            //        {
-            //            return TypeReaderResult.FromSuccess(new CommandOrCrInfo(input));
-            //        }
-            //    }
-            //}
+            if (_crs.GlobalReactions.Any(x => x.Trigger.ToUpperInvariant() == input))
+            {
+                return TypeReaderResult.FromSuccess(new CommandOrCrInfo(input));
+            }
+            var guild = context.Guild;
+            if (guild != null)
+            {
+                if (_crs.GuildReactions.TryGetValue(guild.Id, out var crs))
+                {
+                    if (crs.Concat(_crs.GlobalReactions).Any(x => x.Trigger.ToUpperInvariant() == input))
+                    {
+                        return TypeReaderResult.FromSuccess(new CommandOrCrInfo(input));
+                    }
+                }
+            }
 
             var cmd = await new CommandTypeReader(_client, _cmds).ReadAsync(context, input, services);
             if (cmd.IsSuccess)
