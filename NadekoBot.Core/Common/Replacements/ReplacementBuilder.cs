@@ -5,9 +5,9 @@ using System.Text.RegularExpressions;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+using NadekoBot.Core.Services.Impl;
 using NadekoBot.Extensions;
 using NadekoBot.Modules.Music.Services;
-using NadekoBot.Modules.Administration.Services;
 
 namespace NadekoBot.Common.Replacements
 {

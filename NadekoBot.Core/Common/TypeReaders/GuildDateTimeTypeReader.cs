@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Discord.Commands;
-using NadekoBot.Modules.Administration.Services;
 using NadekoBot.Core.Common.TypeReaders;
 using Discord.WebSocket;
+using NadekoBot.Core.Services.Impl;
 
 namespace NadekoBot.Common.TypeReaders
 {

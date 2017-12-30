@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using Discord.WebSocket;
+﻿using Discord.WebSocket;
 using NadekoBot.Extensions;
-using NadekoBot.Core.Services;
-using NadekoBot.Core.Services.Database.Models;
+using System;
+using System.Collections.Concurrent;
+using System.Linq;
 
-namespace NadekoBot.Modules.Administration.Services
+namespace NadekoBot.Core.Services.Impl
 {
+
     public class GuildTimezoneService : INService
     {
         // todo 70 this is a hack >.<
