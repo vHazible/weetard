@@ -8,33 +8,13 @@
 
   <ItemGroup>
     <Compile Remove="Modules\CustomReactions\**" />
-    <Compile Remove="Modules\Searches\**" />
     <EmbeddedResource Remove="Modules\CustomReactions\**" />
-    <EmbeddedResource Remove="Modules\Searches\**" />
     <None Remove="Modules\CustomReactions\**" />
-    <None Remove="Modules\Searches\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Modules\Searches\Common\AnimeResult.cs" />
-    <Compile Include="Modules\Searches\Common\CryptoData.cs" />
-    <Compile Include="Modules\Searches\Common\DefineModel.cs" />
-    <Compile Include="Modules\Searches\Common\Exceptions\StreamNotFoundException.cs" />
-    <Compile Include="Modules\Searches\Common\GoogleSearchResult.cs" />
-    <Compile Include="Modules\Searches\Common\MagicItem.cs" />
-    <Compile Include="Modules\Searches\Common\MangaResult.cs" />
-    <Compile Include="Modules\Searches\Common\NovelData.cs" />
-    <Compile Include="Modules\Searches\Common\OmdbProvider.cs" />
-    <Compile Include="Modules\Searches\Common\OverwatchApiModel.cs" />
-    <Compile Include="Modules\Searches\Common\PathOfExileModels.cs" />
-    <Compile Include="Modules\Searches\Common\SearchImageCacher.cs" />
-    <Compile Include="Modules\Searches\Common\StreamResponses.cs" />
-    <Compile Include="Modules\Searches\Common\TimeModels.cs" />
-    <Compile Include="Modules\Searches\Common\WeatherModels.cs" />
-    <Compile Include="Modules\Searches\Common\WikipediaApiModel.cs" />
-    <Compile Include="Modules\Searches\Common\WoWJoke.cs" />
-    <Compile Include="Modules\Searches\Exceptions\TagBlacklistedException.cs" />
-    <Compile Include="Modules\Searches\Services\SearchesService.cs" />
+    <Compile Remove="Modules\Searches\FeedCommands.cs" />
+    <Compile Remove="Modules\Searches\Services\FeedsService.cs" />
   </ItemGroup>
 
   <ItemGroup>
