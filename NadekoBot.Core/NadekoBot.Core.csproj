@@ -9,6 +9,8 @@
   <ItemGroup>
     <Compile Remove="Modules\Searches\FeedCommands.cs" />
     <Compile Remove="Modules\Searches\Services\FeedsService.cs" />
+    <Compile Remove="Modules\Searches\Services\StreamNotificationService.cs" />
+    <Compile Remove="Modules\Searches\StreamNotificationCommands.cs" />
   </ItemGroup>
 
   <ItemGroup>
