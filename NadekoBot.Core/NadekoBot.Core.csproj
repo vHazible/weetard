@@ -9,23 +9,17 @@
   <ItemGroup>
     <Compile Remove="Modules\Administration\**" />
     <Compile Remove="Modules\CustomReactions\**" />
-    <Compile Remove="Modules\Games\**" />
     <Compile Remove="Modules\Nsfw\**" />
-    <Compile Remove="Modules\Pokemon\**" />
     <Compile Remove="Modules\Searches\**" />
     <Compile Remove="Modules\Utility\**" />
     <EmbeddedResource Remove="Modules\Administration\**" />
     <EmbeddedResource Remove="Modules\CustomReactions\**" />
-    <EmbeddedResource Remove="Modules\Games\**" />
     <EmbeddedResource Remove="Modules\Nsfw\**" />
-    <EmbeddedResource Remove="Modules\Pokemon\**" />
     <EmbeddedResource Remove="Modules\Searches\**" />
     <EmbeddedResource Remove="Modules\Utility\**" />
     <None Remove="Modules\Administration\**" />
     <None Remove="Modules\CustomReactions\**" />
-    <None Remove="Modules\Games\**" />
     <None Remove="Modules\Nsfw\**" />
-    <None Remove="Modules\Pokemon\**" />
     <None Remove="Modules\Searches\**" />
     <None Remove="Modules\Utility\**" />
   </ItemGroup>
