@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using NadekoBot.Common.Attributes;
-using NadekoBot.Modules.Administration.Services;
+using NadekoBot.Core.Services.Impl;
 
 namespace NadekoBot.Modules.Administration
 {
