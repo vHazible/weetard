@@ -12,7 +12,6 @@
     <Compile Remove="Modules\Gambling\**" />
     <Compile Remove="Modules\Games\**" />
     <Compile Remove="Modules\Nsfw\**" />
-    <Compile Remove="Modules\Permissions\**" />
     <Compile Remove="Modules\Pokemon\**" />
     <Compile Remove="Modules\Searches\**" />
     <Compile Remove="Modules\Utility\**" />
@@ -22,7 +21,6 @@
     <EmbeddedResource Remove="Modules\Gambling\**" />
     <EmbeddedResource Remove="Modules\Games\**" />
     <EmbeddedResource Remove="Modules\Nsfw\**" />
-    <EmbeddedResource Remove="Modules\Permissions\**" />
     <EmbeddedResource Remove="Modules\Pokemon\**" />
     <EmbeddedResource Remove="Modules\Searches\**" />
     <EmbeddedResource Remove="Modules\Utility\**" />
@@ -32,7 +30,6 @@
     <None Remove="Modules\Gambling\**" />
     <None Remove="Modules\Games\**" />
     <None Remove="Modules\Nsfw\**" />
-    <None Remove="Modules\Permissions\**" />
     <None Remove="Modules\Pokemon\**" />
     <None Remove="Modules\Searches\**" />
     <None Remove="Modules\Utility\**" />
