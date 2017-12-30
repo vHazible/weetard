@@ -19,6 +19,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="Modules\Searches\Common\AnimeResult.cs" />
+    <Compile Include="Modules\Searches\Common\CryptoData.cs" />
+    <Compile Include="Modules\Searches\Common\DefineModel.cs" />
+    <Compile Include="Modules\Searches\Common\Exceptions\StreamNotFoundException.cs" />
+    <Compile Include="Modules\Searches\Common\GoogleSearchResult.cs" />
+    <Compile Include="Modules\Searches\Common\MagicItem.cs" />
+    <Compile Include="Modules\Searches\Common\MangaResult.cs" />
+    <Compile Include="Modules\Searches\Common\NovelData.cs" />
+    <Compile Include="Modules\Searches\Common\OmdbProvider.cs" />
+    <Compile Include="Modules\Searches\Common\OverwatchApiModel.cs" />
+    <Compile Include="Modules\Searches\Common\PathOfExileModels.cs" />
+    <Compile Include="Modules\Searches\Common\SearchImageCacher.cs" />
+    <Compile Include="Modules\Searches\Common\StreamResponses.cs" />
+    <Compile Include="Modules\Searches\Common\TimeModels.cs" />
+    <Compile Include="Modules\Searches\Common\WeatherModels.cs" />
+    <Compile Include="Modules\Searches\Common\WikipediaApiModel.cs" />
+    <Compile Include="Modules\Searches\Common\WoWJoke.cs" />
+    <Compile Include="Modules\Searches\Exceptions\TagBlacklistedException.cs" />
+    <Compile Include="Modules\Searches\Services\SearchesService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AngleSharp" Version="0.9.9" />
     <PackageReference Include="CommandLineParser" Version="2.1.1-beta" />
     <PackageReference Include="Discord.Net" Version="2.0.0-beta-00854" />
