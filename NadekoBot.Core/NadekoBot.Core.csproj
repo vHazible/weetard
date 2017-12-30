@@ -7,13 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Modules\Administration\**" />
     <Compile Remove="Modules\CustomReactions\**" />
     <Compile Remove="Modules\Searches\**" />
-    <EmbeddedResource Remove="Modules\Administration\**" />
     <EmbeddedResource Remove="Modules\CustomReactions\**" />
     <EmbeddedResource Remove="Modules\Searches\**" />
-    <None Remove="Modules\Administration\**" />
     <None Remove="Modules\CustomReactions\**" />
     <None Remove="Modules\Searches\**" />
   </ItemGroup>
