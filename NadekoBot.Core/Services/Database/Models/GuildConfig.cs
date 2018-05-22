@@ -183,6 +183,8 @@ namespace NadekoBot.Core.Services.Database.Models
         public int Count { get; set; }
         public PunishmentAction Punishment { get; set; }
         public int Time { get; set; }
+        // used if punishment is remove role
+        public ulong? RoleId { get; set; }
     }
 
     public class CommandAlias : DbEntity
